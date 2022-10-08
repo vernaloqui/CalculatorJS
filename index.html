@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Calculator</title>
@@ -63,14 +64,49 @@
             background-color: #9090CC; 
             box-shadow: inset -5px -5px 12px rgba(156, 78, 78, 0.5);
         }
+        body {
+            background-image:url("math image.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+        html {
+            height: 100%;
+        }
+        .nav-link {
+            color: #712e1e;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md" style="background:#ffd5af;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" class="border border-2 rounded-circle border-dark" style="width:75px;">
+        </a>
+            <button class="navbar-toggler"
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMark" 
+                    aria-controls="navbarMark" 
+                    aria-expanded="false" 
+                    aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMark">
+                <ul class="navbar-nav text-uppercase fw-bold mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" >Compute Anytime</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class="container-fluid text-center bottom" style="background-color:#ffd5af;">
-            
-            <p style="color:#712e1e;">Mouse-Operated Calculator</p>
-</div>
+<!--End of nav bar-->
     <br><br><br>
     <center>
     <div class="container">
