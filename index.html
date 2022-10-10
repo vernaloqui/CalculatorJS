@@ -134,7 +134,7 @@
             <input type="button" value="+/-" onclick="form1.answer.value = negate(form1.answer.value)">
             <input type="button" value="0" onclick="form1.answer.value += '0'">
             <input type="button" value="." onclick="form1.answer.value += '.'">
-            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)" id="equals">
+            <input type="button" value="=" onclick="form1.answer.value = Calcul8(form1.answer.value)" id="equals">
             
             
         </div>
@@ -167,8 +167,10 @@
             return z;   
         }
         }
-        function Exp(a) {
-
+        function Calcul8(b) {
+            const c = eval(b);
+            const d = c.toFixed(2);
+            return d;
         }
     </script>
 </body>
